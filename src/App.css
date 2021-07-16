@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -17,6 +19,32 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.topnav {
+  background-color: rgb(29, 29, 29);
+  position: relative;
+  top: -225px;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  cursor: pointer;
+  margin-left: -500px;
+  margin-right: 500px;
+  opacity: 0;
+}
+
+.topnav a:hover {
+  background-color: #663dff;
 }
 
 .App-pfp-boarder {
@@ -70,16 +98,15 @@
 .App-link {
   color:rgb(71, 40, 255);
   background-color: #7659fa00;
-  font-size: calc(6.1px + 2.3vmin);
-  margin-left: -500px;
-  margin-right: 500px;
-  top: 30px;
   opacity: 0;
   padding: 5px;
   border-radius: 4.5px;
   border-color: black;
   width: max-content;
-  position: relative;
+}
+
+.App-link:hover {
+  color: white;
 }
 
 .Section-titles {

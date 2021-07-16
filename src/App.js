@@ -97,6 +97,18 @@ export default class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+          <div className="topnav">
+            <a className="App-link" id="link-5">Home</a>
+            <a className="App-link" id="link-4">About Me</a>
+            <a className="App-link" id="link-3">Skills</a>
+            <a className="App-link" id="link-2">My Projects</a>
+            <a className="App-link" id="link-1">Contact</a>
+            {/* <input type="button" className="App-link"  onClick={this.handleClick} value=" Github "/>
+            <input type="button" className="App-link" id="link-4" onClick={this.handleClick} value="YouTube"/>
+            <input type="button" className="App-link" id="link-3" onClick={this.handleClick} value="Twitter"/>
+            <input type="button" className="App-link" id="link-2" onClick={this.handleClick} value="Linkedin"/>
+            <input type="button" className="App-link" id="link-1" onClick={this.handleClick} value="Medium"/> */}
+          </div>
           <h1 className="App-title">
             Shane Possibly
           </h1>
@@ -129,13 +141,6 @@ export default class App extends Component {
               </span>
               .
             </span>
-          </div>
-          <div>
-            <input type="button" className="App-link" id="link-5" onClick={this.handleClick} value=" Github "/>
-            <input type="button" className="App-link" id="link-4" onClick={this.handleClick} value="YouTube"/>
-            <input type="button" className="App-link" id="link-3" onClick={this.handleClick} value="Twitter"/>
-            <input type="button" className="App-link" id="link-2" onClick={this.handleClick} value="Linkedin"/>
-            <input type="button" className="App-link" id="link-1" onClick={this.handleClick} value="Medium"/>
           </div>
           <div>
             <h3 className="Section-titles">About Me</h3>
