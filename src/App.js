@@ -99,9 +99,9 @@ export default class App extends Component {
         <header className="App-header">
           <div className="topnav">
             <a className="App-link" id="link-5">Home</a>
-            <a className="App-link" id="link-4">About Me</a>
+            <a className="App-link" id="link-4">About</a>
             <a className="App-link" id="link-3">Skills</a>
-            <a className="App-link" id="link-2">My Projects</a>
+            <a className="App-link" id="link-2">Projects</a>
             <a className="App-link" id="link-1">Contact</a>
             {/* <input type="button" className="App-link"  onClick={this.handleClick} value=" Github "/>
             <input type="button" className="App-link" id="link-4" onClick={this.handleClick} value="YouTube"/>
@@ -125,7 +125,7 @@ export default class App extends Component {
             </span>
           </div>
           <div>
-            <span>
+          <span className="App-description">
               {"I am a "}
               <span className="App-description-info">
                 {/* Filled in with typewriter */}
@@ -134,7 +134,7 @@ export default class App extends Component {
             </span>
           </div>
           <div>
-            <span>
+          <span className="App-description">
               {"Thank you for visiting my "}
               <span className="App-description-thanks">
                 {/* Filled in with typewriter */}
@@ -142,11 +142,42 @@ export default class App extends Component {
               .
             </span>
           </div>
-          <div>
-            <h3 className="Section-titles">About Me</h3>
-
-          </div>
         </header>
+        <div className="About-section">
+          <h3 className="Section-titles">About Me</h3>
+          <p className="Info-paragraphs">
+            I was born and raised in Houston Texas, which is where I am currently located.
+            I've recently graduated from Flatiron School's Software Engineering program with a total of 525 clock hours.
+            As a child I was always fascinated with computers
+            and now I am finally living my dream of being a Software Engineer.
+            I am always looking to learn and try new things and I plan to continue expanding
+            my knowledge on different programming languages.
+            I look forward to working on big projects and creating a better tomorrow for everyone.
+          </p>
+        </div>
+        <div className="Skills-section">
+          <h3 className="Section-titles">Skills</h3>
+          <div>
+            <div className="Skill-box">
+              <h4>Ruby</h4>
+            </div>
+            <div className="Skill-box">
+              <h4>Ruby on Rails</h4>
+            </div>
+            <div className="Skill-box">
+              <h4>HTML</h4>
+            </div>
+            <div className="Skill-box">
+              <h4>CSS</h4>
+            </div>
+            <div className="Skill-box">
+              <h4>JavaScript</h4>
+            </div>
+            <div className="Skill-box">
+              <h4>React</h4>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
