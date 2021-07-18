@@ -92,24 +92,39 @@ export default class App extends Component {
       window.location.href="https://shanerpersonal.medium.com/"
     }
   }
+
+  scrollElement(clickedSec) {
+    console.log(clickedSec.target.offsetParent.id)
+    if (clickedSec.target.offsetParent.id === 'link-5')
+      var currentSec = document.getElementById("#homeSection")
+    else if (clickedSec.target.offsetParent.id === 'link-4')
+      var currentSec = document.getElementById("#aboutSection")
+    else if (clickedSec.target.offsetParent.id === 'link-3')
+      var currentSec = document.getElementById("#skillsSection")
+    else if (clickedSec.target.offsetParent.id === 'link-2')
+      var currentSec = document.getElementById("#projectsSection")
+    else if (clickedSec.target.offsetParent.id === 'link-1')
+      var currentSec = document.getElementById("#contactSection")
+    currentSec.scrollIntoView({behavior: 'smooth'})
+  }
   
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <div className="topnav">
-            <a className="App-link" id="link-5">Home</a>
-            <a className="App-link" id="link-4">About</a>
-            <a className="App-link" id="link-3">Skills</a>
-            <a className="App-link" id="link-2">Projects</a>
-            <a className="App-link" id="link-1">Contact</a>
+            <a onClick={this.scrollElement} href="#homeSection" className="App-link" id="link-5">Home</a>
+            <a onClick={this.scrollElement} href="#aboutSection" className="App-link" id="link-4">About</a>
+            <a onClick={this.scrollElement} href="#skillsSection" className="App-link" id="link-3">Skills</a>
+            <a onClick={this.scrollElement} href="#projectsSection" className="App-link" id="link-2">Projects</a>
+            <a onClick={this.scrollElement} href="#contactSection" className="App-link" id="link-1">Contact</a>
             {/* <input type="button" className="App-link"  onClick={this.handleClick} value=" Github "/>
             <input type="button" className="App-link" id="link-4" onClick={this.handleClick} value="YouTube"/>
             <input type="button" className="App-link" id="link-3" onClick={this.handleClick} value="Twitter"/>
             <input type="button" className="App-link" id="link-2" onClick={this.handleClick} value="Linkedin"/>
             <input type="button" className="App-link" id="link-1" onClick={this.handleClick} value="Medium"/> */}
           </div>
-          <h1 className="App-title">
+          <h1 id="#homeSection" className="App-title">
             Shane Possibly
           </h1>
           <div className="App-pfp-boarder">
@@ -143,7 +158,7 @@ export default class App extends Component {
             </span>
           </div>
         </header>
-        <div className="About-section">
+        <div id="#aboutSection" className="About-section">
           <h3 className="Section-titles">About Me</h3>
           <p className="Info-paragraphs">
             I was born and raised in Houston Texas, which is where I am currently located.
@@ -156,10 +171,12 @@ export default class App extends Component {
           </p>
         </div>
         <div className="Skills-section">
-          <h3 className="Section-titles">Skills</h3>
+          <h3 id="#skillsSection" className="Section-titles">Skills</h3>
           <div>
             <div className="Skill-box">
               <h4>Ruby</h4>
+              <p>
+              </p>
             </div>
             <div className="Skill-box">
               <h4>Ruby on Rails</h4>

@@ -2,6 +2,7 @@
   text-align: center;
   background-color: rgb(29, 29, 29);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 *::-webkit-scrollbar {
@@ -131,12 +132,16 @@
   font-size: calc(6.1px + 2.3vmin);
   position: relative;
   top: -75px;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .Skills-section {
   color:white;
   background-color: rgb(29, 29, 29);
   font-size: calc(6.1px + 2.3vmin);
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .Skill-box {
@@ -150,4 +155,6 @@
   width: 25%;
   height: 500px;
   float: left;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
