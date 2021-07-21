@@ -175,25 +175,128 @@ export default class App extends Component {
           <div>
             <div className="Skill-box">
               <h4>Ruby</h4>
-              <p>
-              </p>
+              <p className="Skill-desc">Ruby is an interpreted, high-level, general-purpose programming language.</p>
+              <ul className="Skill-examples">
+                <li>Object Oriented Programming</li>
+                <li>Models, Controllers, and Routing</li>
+                <li>Command Line Interface Applications</li>
+                <li>SQL Table Migrations and Seeding</li>
+              </ul>
             </div>
             <div className="Skill-box">
               <h4>Ruby on Rails</h4>
+              <p className="Skill-desc">Rails is a server-side web application framework written in Ruby under the MIT License.</p>
+              <ul className="Skill-examples">
+                <li>Experience making Apps with full CRUD</li>
+                <li>Foundation using Rails as a Backend API</li>
+                <li>Implemented Model-View-Control structure</li>
+                <li>Backend routing for the Frontend fetch requests</li>
+              </ul>
             </div>
             <div className="Skill-box">
               <h4>HTML</h4>
+              <p className="Skill-desc">HTML is the standard markup language for documents designed to be displayed in a web browser.</p>
+              <ul className="Skill-examples">
+                <li>Experience using HTML as a Frontend</li>
+                <li>Knowledge of making fetch reqeusts to Backend</li>
+                <li>Strong ability in modifying the DOM</li>
+                <li>Conditional rendering of data recieved from fetch requests</li>
+              </ul>
             </div>
             <div className="Skill-box">
               <h4>CSS</h4>
+              <p className="Skill-desc">CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+              <ul className="Skill-examples">
+                <li>Experience using CSS to style my webpages</li>
+                <li>Knowledge of creating custom color themes</li>
+                <li>Strong ability in creating a beautiful user interface</li>
+                <li>Conditional rendering of webpage data using ids</li>
+              </ul>
             </div>
             <div className="Skill-box">
               <h4>JavaScript</h4>
+              <p className="Skill-desc">JavaScript is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions.</p>
+              <ul className="Skill-examples">
+                <li>Experience using Object Oriented JavaScript</li>
+                <li>Knowledge of creating custom functions in JavaScript</li>
+                <li>Effectively make fetch requests to the Backend</li>
+                <li>Making API calls to commerce platforms like Stripe API</li>
+              </ul>
             </div>
             <div className="Skill-box">
               <h4>React</h4>
+              <p className="Skill-desc">React is a free and open-source front-end JavaScript library for building user interfaces or UI components.</p>
+              <ul className="Skill-examples">
+                <li>Experience using React and ReactRoutes</li>
+                <li>Knowledge of handling fetch "promise" data</li>
+                <li>Effectively make fetch requests to the Backend</li>
+                <li>Conditional rendering depending on fetch's "promise" data</li>
+              </ul>
             </div>
           </div>
+        </div>
+        <div className="Projects-section">
+          <h3 id="#projectsSection" className="Section-titles">Projects</h3>
+          <div>
+            <div className="Project-box">
+              <h4>Simple To-do App</h4>
+              <p className="Project-desc">Basic to-do app created to practice more JS as well as sharpen my skills in the backend.</p>
+              <ul className="Project-info">
+                <li>Users can register or login</li>
+                <li>Users can view their account info</li>
+                <li>Users can view list of all tasks</li>
+                <li>Users can favorite specific tasks</li>
+                <li>Users can view their favorited tasks</li>
+                <li>Users can complete or unfavorite a task</li>
+                <li>Users can create new tasks</li>
+              </ul>
+              <a href="https://github.com/Sdsdsde2/todo-app-frontend" className="Project-link" id="todo-demo-link">Github</a>
+              <a href="https://www.youtube.com/watch?v=iPKr4SkVODg" className="Project-link" id="todo-code-link">Demo</a>
+            </div>
+            <div className="Project-box">
+              <h4>Easy Remote Virtual Machine</h4>
+              <p className="Project-desc">This project was made with the idea of automating sales and VM connections in mind.</p>
+              <ul className="Project-info">
+                <li>Users can register or login</li>
+                <li>Users can view their account info</li>
+                <li>Users can purchase credits using Stripe API</li>
+                <li>Users can subscribe to Virtual Machines using credits</li>
+                <li>Users can connect to, terminate, or review their VM</li>
+                <li>Users can see all reviews</li>
+              </ul>
+              <a href="https://github.com/Sdsdsde2/phase-5-frontend" className="Project-link" id="p5-demo-link">Github</a>
+              <a href="https://www.youtube.com/watch?v=p518sxIumpg" className="Project-link" id="p5-code-link">Demo</a>
+            </div>
+            <div className="Project-box">
+              <h4>Another Rhythm Game</h4>
+              <p className="Project-desc">This project idea comes from making a website with a game similar to the rhythm game "OSU".</p>
+              <ul className="Project-info">
+                <li>Users can view the games instructions</li>
+                <li>Users can play as a guest</li>
+                <li>Users can enter a name to save their score</li>
+                <li>Users can choose to save or delete their score upon completing the game</li>
+                <li>Users can view the top 10 scores from other players</li>
+              </ul>
+              <a href="https://github.com/Sdsdsde2/phase-3-project-rythm-game" className="Project-link" id="p3-demo-link">Github</a>
+              <a href="https://www.youtube.com/watch?v=ggOhEXUuZmA" className="Project-link" id="p3-code-link">Demo</a>
+            </div>
+            <div className="Project-box">
+              <h4>Vacation Booking App</h4>
+              <p className="Project-desc">This project comes from the idea of making a Ruby CLI App that helped users plan out and book their vacations.</p>
+              <ul className="Project-info">
+                <li>Users can register or login to an existing account</li>
+                <li>Users can view different vacation sights</li>
+                <li>Users can view different flights</li>
+                <li>Users can submit a review for their vacation</li>
+                <li>Users can sign out of their accounts</li>
+              </ul>
+              <a href="https://github.com/coriblount/ruby-project-guidelines" className="Project-link" id="p1-demo-link">Github</a>
+              <a href="https://www.youtube.com/watch?v=oWQQU7nFwaI" className="Project-link" id="p1-code-link">Demo</a>
+            </div>
+          </div>
+        </div>
+        <div className="Contact-section">
+          <h3 id="#contactSection" className="Section-titles">Contact Me</h3>
         </div>
       </div>
     );

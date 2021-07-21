@@ -9,6 +9,10 @@
   display: none;
 }
 
+li {
+  margin: 0 0 10px 0;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -106,6 +110,7 @@
   border-radius: 4.5px;
   border-color: black;
   width: max-content;
+  text-decoration: none;
 }
 
 .App-link:hover {
@@ -157,4 +162,87 @@
   float: left;
   overflow-x: hidden;
   overflow-y: hidden;
+}
+
+.Skill-desc {
+  font-size: 24px;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  padding-top: 3.5%;
+  color:rgb(71, 40, 255);
+}
+
+.Skill-examples {
+  font-size: 18px;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  padding-top: 3.5%;
+  list-style-type: none;
+  font-weight: 450;
+}
+
+.Projects-section {
+  color:white;
+  background-color: rgb(29, 29, 29);
+  font-size: calc(6.1px + 2.3vmin);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-top: 175px;
+  padding-bottom: 100px;
+}
+
+.Project-box {
+  text-align: center;
+  background-color: rgba(0,0,0,.3);
+  position: relative;
+  margin-bottom: 20px;
+  margin-left: 17%;
+  top: 75px;
+  padding-bottom: 30px;
+  width: 25%;
+  height: 550px;
+  float: left;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.Project-desc {
+  font-size: 24px;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  padding-top: 3.5%;
+  color:rgb(71, 40, 255);
+}
+
+.Project-info {
+  font-size: 18px;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  padding-top: 3.5%;
+  list-style-type: none;
+  font-weight: 450;
+}
+
+.Project-link {
+  color:rgb(71, 40, 255);
+  background-color: #7659fa00;
+  padding: 5px;
+  border-radius: 4.5px;
+  border-color: black;
+  width: max-content;
+  text-decoration: none;
+}
+
+.Project-link:hover {
+  color: white;
+}
+
+.Contact-section {
+  color:white;
+  background-color: rgb(29, 29, 29);
+  font-size: calc(6.1px + 2.3vmin);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-top: 175px;
+  padding-bottom: 100px;
 }
