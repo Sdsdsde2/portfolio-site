@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 import pfp from './portfoliopfp.jpg';
 import anime from 'animejs/lib/anime.es.js';
+import githubicon from './github-icon-13-128.png';
+import twittericon from './twitter-icon-128.png';
+import linkedinicon from './linkedin-icon-128.png';
+import gmailicon from './gmail-login-icon-128.png'
 
 var i = 0;
 var j = 0;
@@ -114,7 +118,7 @@ export default class App extends Component {
         <header className="App-header">
           <div className="topnav">
             <a onClick={this.scrollElement} href="#homeSection" className="App-link" id="link-5">Home</a>
-            <a onClick={this.scrollElement} href="#aboutSection" className="App-link" id="link-4">About</a>
+            <a onClick={this.scrollElement} href="#aboutSection" className="App-link" id="link-4">Background</a>
             <a onClick={this.scrollElement} href="#skillsSection" className="App-link" id="link-3">Skills</a>
             <a onClick={this.scrollElement} href="#projectsSection" className="App-link" id="link-2">Projects</a>
             <a onClick={this.scrollElement} href="#contactSection" className="App-link" id="link-1">Contact</a>
@@ -159,7 +163,7 @@ export default class App extends Component {
           </div>
         </header>
         <div id="#aboutSection" className="About-section">
-          <h3 className="Section-titles">About Me</h3>
+          <h3 className="Section-titles">My Background</h3>
           <p className="Info-paragraphs">
             I was born and raised in Houston Texas, which is where I am currently located.
             I've recently graduated from Flatiron School's Software Engineering program with a total of 525 clock hours.
@@ -171,7 +175,7 @@ export default class App extends Component {
           </p>
         </div>
         <div className="Skills-section">
-          <h3 id="#skillsSection" className="Section-titles">Skills</h3>
+          <h3 id="#skillsSection" className="Section-titles">My Skills</h3>
           <div>
             <div className="Skill-box">
               <h4>Ruby</h4>
@@ -236,7 +240,7 @@ export default class App extends Component {
           </div>
         </div>
         <div className="Projects-section">
-          <h3 id="#projectsSection" className="Section-titles">Projects</h3>
+          <h3 id="#projectsSection" className="Section-titles">Previous Projects</h3>
           <div>
             <div className="Project-box">
               <h4>Simple To-do App</h4>
@@ -296,7 +300,21 @@ export default class App extends Component {
           </div>
         </div>
         <div className="Contact-section">
-          <h3 id="#contactSection" className="Section-titles">Contact Me</h3>
+          <h3 id="#contactSection" className="Section-titles">Contact and Socials</h3>
+          <div className="Contact-buttons">
+            <a href="https://github.com/Sdsdsde2" className="Img-button">
+              <img src={githubicon} alt="github"></img>
+            </a>
+            <a href="mailto: shanerpersonal@gmail.com" className="Img-button">
+              <img src={gmailicon} alt="gmail"></img>
+            </a>
+            <a href="https://twitter.com/ShanePossibly" className="Img-button">
+              <img src={twittericon} alt="twitter"></img>
+            </a>
+            <a href="https://www.linkedin.com/in/shane-rachal-91013920a/" className="Img-button">
+              <img src={linkedinicon} alt="linkedin"></img>
+            </a>
+          </div>
         </div>
       </div>
     );
