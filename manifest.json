@@ -1,5 +1,8 @@
 {
   "short_name": "Shane's site",
   "name": "This could possibly be Shane's site but we don't know.",
-  "start_url": "https://sdsdsde2.github.io/portfolio-site"
+  "start_url": "https://sdsdsde2.github.io/portfolio-site",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
 }
