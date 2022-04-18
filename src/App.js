@@ -122,14 +122,9 @@ export default class App extends Component {
             <a onClick={this.scrollElement} href="#skillsSection" className="App-link" id="link-3">Skills</a>
             <a onClick={this.scrollElement} href="#projectsSection" className="App-link" id="link-2">Projects</a>
             <a onClick={this.scrollElement} href="#contactSection" className="App-link" id="link-1">Contact</a>
-            {/* <input type="button" className="App-link"  onClick={this.handleClick} value=" Github "/>
-            <input type="button" className="App-link" id="link-4" onClick={this.handleClick} value="YouTube"/>
-            <input type="button" className="App-link" id="link-3" onClick={this.handleClick} value="Twitter"/>
-            <input type="button" className="App-link" id="link-2" onClick={this.handleClick} value="Linkedin"/>
-            <input type="button" className="App-link" id="link-1" onClick={this.handleClick} value="Medium"/> */}
           </div>
           <h1 id="#homeSection" className="App-title">
-            Shane Possibly
+            Possibly Shane
           </h1>
           <div className="App-pfp-boarder">
             <img src={pfp} className="App-pfp"></img>
